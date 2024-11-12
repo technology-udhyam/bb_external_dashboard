@@ -290,7 +290,7 @@ if (strpos($string, $substring) !== false) {
     $encoded_string = str_replace('+', '%20', $encoded_string);
     // echo $encoded_string;
     // echo'<iframe width="100%" height="680" src="https://lookerstudio.google.com/embed/reporting/eae17fe5-462a-4053-a1d0-6b4a5ac91a6d/page/p_fs5i69p88c?params=%7B%22s1%22:%22'.$encoded_string.'%22,%22s2%22:%22'.$encoded_string.'%22%7D%22 frameborder="0" style="border:0" allowfullscreen></iframe>';
-    echo '<iframe width="100%" height="100%" src="https://lookerstudio.google.com/embed/reporting/eae17fe5-462a-4053-a1d0-6b4a5ac91a6d/page/p_fs5i69p88c?params=%7B%22s1%22:%22' . $encoded_string . '%22,%22s2%22:%22' . $encoded_string . '%22,%22s3%22:%22' . $encoded_string . '%22%7D" frameborder="0" style="border:0"  allowfullscreen scrolling="auto"></iframe>';
+    echo '<iframe width="100%" height="100%" src="https://lookerstudio.google.com/embed/reporting/eae17fe5-462a-4053-a1d0-6b4a5ac91a6d/page/p_fs5i69p88c?params=%7B%22s1%22:%22' . $encoded_string . '%22,%22s2%22:%22' . $encoded_string . '%22,%22s3%22:%22' . $encoded_string . '%22,%22s5%22:%22' . $encoded_string . '%22%7D" frameborder="0" style="border:0"  allowfullscreen scrolling="auto"></iframe>';
 } else {
     $decimal_number = hexdec($udise_code);
     // echo $decimal_number;
