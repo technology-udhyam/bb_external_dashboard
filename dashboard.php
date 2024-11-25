@@ -66,20 +66,25 @@ if (isset($_GET['s1'])) {
         .left .wrapper .logo-container {
             display: flex;
             gap: 3rem;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .left .wrapper .logo-container img {
             max-height: 88px;
+            max-width: 100%;
         }
 
         .left .wrapper .image-container {
             display: flex;
             gap: 1rem;
             flex-wrap: wrap;
+            justify-content: center;
         }
 
         .left .wrapper .image-container img {
             max-height: 196px;
+            max-width: 100%;
         }
 
         .left .wrapper .heading-container .heading {
@@ -138,6 +143,24 @@ if (isset($_GET['s1'])) {
             background-color: var(--cta-color);
         }
 
+        @media (max-width: 1000px) {
+
+            body {
+                flex-direction: column; 
+               
+            }
+
+            .left .wrapper .logo-container, .left .wrapper .image-container,.left .wrapper .cta, .left .wrapper .udhyamlogo{
+                margin-bottom: 1rem;
+            }
+            
+            .right {
+                margin-bottom: 4rem;
+            }
+
+
+        }       
+        
     </style>
 </head>
 
