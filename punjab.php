@@ -182,7 +182,7 @@ if (false !== strpos($_SERVER['REQUEST_URI'], 's1')) {
         <header>
             <nav>
                 <div class="image-container">
-                    <img class="udhyam_logos" src="./UdhyamLogo.png" alt="logo">
+                    <!-- <img class="udhyam_logos" src="./UdhyamLogo.png" alt="logo"> -->
                     <?php if ($text == "Madhya Pradesh") { ?>
                         <img src="mpLogo.jpg" alt="logo">
                     <?php } ?>
