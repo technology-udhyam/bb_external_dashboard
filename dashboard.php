@@ -102,7 +102,15 @@ if (isset($_GET['s1'])) {
             max-height: 40px;
         }
 
-        .left .wrapper .cta {
+        .left .wrapper .button-container{
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-block: 1rem;
+        }
+
+        .left .wrapper .button-container .cta {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -117,8 +125,14 @@ if (isset($_GET['s1'])) {
             gap: 0.4rem;
         }
 
-        .left .wrapper .cta:hover {
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        .left .wrapper .button-container .cta img {
+            transform: rotate(0deg); 
+            transition: transform 0.3s ease-in; 
+        }
+
+        .left .wrapper .button-container .cta:hover img{
+            transform: rotate(45deg);
+            transition: transform 0.3s ease-in;
         }
 
         .right {
@@ -179,10 +193,16 @@ if (isset($_GET['s1'])) {
                 <img src="/assets/cm.png" alt="punjab logo">
                 <img src="/assets/em.png" alt="punjab logo">
             </div>
-            <a class="cta" href="punjab.php?s1=<?php echo urlencode($s1Value); ?>" class="cta-button">
-                Proceed To Dashboard
-                <img src="/assets/arrow.svg" alt="">
-            </a>
+            <div class="button-container">
+                <a class="cta" href="punjab_phase2.php" class="cta-button">
+                    Proceed To Phase 1 Dashboard
+                    <img src="/assets/arrow.svg" alt="">
+                </a>
+                <a class="cta" href="punjab.php?s1=<?php echo urlencode($s1Value); ?>" class="cta-button">
+                    Proceed To Phase 2 Dashboard
+                    <img src="/assets/arrow.svg" alt="">
+                </a>
+            </div>
             <img class="udhyamlogo" src="/assets/udhyamlogo.png" alt="">
         </div>
     </div>
