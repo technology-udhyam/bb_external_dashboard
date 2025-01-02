@@ -104,6 +104,7 @@ if (isset($_GET['s1'])) {
 
         .left .wrapper .button-container{
             display: flex;
+            flex-direction: column;
             gap: 1rem;
             justify-content: center;
             flex-wrap: wrap;
