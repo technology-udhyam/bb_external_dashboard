@@ -195,11 +195,11 @@ if (isset($_GET['s1'])) {
             </div>
             <div class="button-container">
                 <a class="cta" href="punjab_phase2.php" class="cta-button">
-                    Proceed To Phase 1 Dashboard
+                    Proceed To Phase 1 (2024 - 25) Dashboard
                     <img src="/assets/arrow.svg" alt="">
                 </a>
                 <a class="cta" href="punjab.php?s1=<?php echo urlencode($s1Value); ?>" class="cta-button">
-                    Proceed To Phase 2 Dashboard
+                    Proceed To Phase 2 (2023 - 24) Dashboard
                     <img src="/assets/arrow.svg" alt="">
                 </a>
             </div>
