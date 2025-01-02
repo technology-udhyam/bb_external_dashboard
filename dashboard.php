@@ -195,11 +195,11 @@ if (isset($_GET['s1'])) {
             </div>
             <div class="button-container">
                 <a class="cta" href="punjab_phase2.php" class="cta-button">
-                    Proceed To Phase 1 Dashboard
+                    Proceed To Phase 1 (2024 - 25) Dashboard
                     <img src="/assets/arrow.svg" alt="">
                 </a>
                 <a class="cta" href="punjab.php?s1=<?php echo urlencode($s1Value); ?>" class="cta-button">
-                    Proceed To Phase 2 Dashboard
+                    Proceed To Phase 2 (2023 - 24) Dashboard
                     <img src="/assets/arrow.svg" alt="">
                 </a>
             </div>
@@ -239,11 +239,8 @@ if (isset($_GET['s1'])) {
             </a>
         </div>
     </div>
-    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
 </body>
 
 </html>
