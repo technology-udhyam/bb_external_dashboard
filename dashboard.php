@@ -214,6 +214,8 @@ if (isset($_GET['s1'])) {
                 <li data-target="#carouselExampleIndicators" data-slide-to="1" ></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2" ></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="3" ></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4" ></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5" ></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -226,7 +228,13 @@ if (isset($_GET['s1'])) {
                     <img class="d-block w-100" src="/assets/images/v3.png" alt="Third slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="/assets/images/v4.jpg" alt="Third slide">
+                    <img class="d-block w-100" src="/assets/images/v4.png" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/assets/images/v5.png" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/assets/images/v6.jpg" alt="Third slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
