@@ -195,7 +195,7 @@ if (isset($_GET['s1'])) {
                 <img src="/assets/em.png" alt="punjab logo">
             </div>
             <div class="button-container">
-                <a class="cta" href="punjab_phase2.php" class="cta-button">
+                <a class="cta" href="punjab_phase1.php" class="cta-button">
                     Proceed To Phase 1 (2024 - 25) Dashboard
                     <img src="/assets/arrow.svg" alt="">
                 </a>

@@ -178,39 +178,31 @@ if (false !== strpos($_SERVER['REQUEST_URI'], 's1')) {
 </head>
 
 <body>
-    <?php if (false !== strpos($_SERVER['REQUEST_URI'], 's1')) { ?>
+    <?php 
+    // if (false !== strpos($_SERVER['REQUEST_URI'], 's1')) { 
+        ?>
         <header>
             <nav>
-                <div class="image-container">
-                    <!-- <img class="udhyam_logos" src="./UdhyamLogo.png" alt="logo"> -->
-                    <?php if ($text == "Madhya Pradesh") { ?>
-                        <img src="mpLogo.jpg" alt="logo">
-                    <?php } ?>
-                    <?php if ($text == "Punjab") { ?>
-                        <img class="pblogo" src="PunjabLogo.png" alt="logo">
-                    <?php } ?>
-                </div>
-                <!-- <?php if (!empty(!empty($_GET['s1']))) { ?>
+            <div class="image-container">
+                <img class="pblogo" src="PunjabLogo.png" alt="logo">
+            </div>
+                <?php 
+                // if (!empty(!empty($_GET['s1']))) { 
+                    ?> 
                     <div class="button-container">
                         <div class="buttons">
                             <h2>PDF</h2>
-                            <a href="https://us-central1-teacherengagement-gliffic.cloudfunctions.net/report_generation_api_dist?state=<?php echo $text; ?>&type=pdf">Download State Report</a>
-                            <a href="https://us-central1-teacherengagement-gliffic.cloudfunctions.net/report_generation_api_dist?state=<?php echo $text; ?>&district=all&type=pdf">Download District Report</a>
+                            <a href="https://us-central1-teacherengagement-gliffic.cloudfunctions.net/report_generation_api_dist_phase1?state=Punjab&type=pdf">Download State Report</a>
+                            <a href="https://us-central1-teacherengagement-gliffic.cloudfunctions.net/report_generation_api_dist_phase1?state=Punjab&district=all&type=pdf">Download District Report</a>
                         </div>
                         <div class="buttons">
                             <h2>Excel</h2>
-                            <a href="https://us-central1-teacherengagement-gliffic.cloudfunctions.net/report_generation_api_dist?state=<?php echo $text; ?>&type=xlsx">Download State Report</a>
-                            <a href="https://us-central1-teacherengagement-gliffic.cloudfunctions.net/report_generation_api_dist?state=<?php echo $text; ?>&district=all&type=xlsx">Download District Report</a>
+                            <a href="https://us-central1-teacherengagement-gliffic.cloudfunctions.net/report_generation_api_dist_phase1?state=Punjab&type=xlsx">Download State Report</a>
+                            <a href="https://us-central1-teacherengagement-gliffic.cloudfunctions.net/report_generation_api_dist_phase1?state=Punjab&district=all&type=xlsx">Download District Report</a>
                         </div>
                         <div class="buttons">
-                            <h2>JPG</h2>
-                            <?php if (false !== strpos($_SERVER['REQUEST_URI'], 's1') && $text == "Madhya Pradesh") { ?>
-                                <select class="select" name="district" id="district" onchange="toggleButton()">
-                                    <option value="np">Select District</option>
-                                    <option value="BHOPAL">Bhopal</option>
-                                    <option value="INDORE">Indore</option>
-                                </select>
-                            <?php } else if (false !== strpos($_SERVER['REQUEST_URI'], 's1') && $text == "Punjab") { ?>
+                            <!-- <h2>JPG</h2>
+                           
                                 <select class="select" name="district" id="district" onchange="toggleButton()">
                                     <option value="np">Select District</option>
                                     <option value="AMRITSAR">Amritsar</option>
@@ -236,26 +228,35 @@ if (false !== strpos($_SERVER['REQUEST_URI'], 's1')) {
                                     <option value="SANGRUR">Sangrur</option>
                                     <option value="SAS NAGAR">SAS Nagar</option>
                                     <option value="TARANTARAN">Tarantaran</option>
-                                </select>
-                            <?php } else {
-                            } ?>
+                                </select> -->
+                            <?php 
+                            // } else {
+                            // } 
+                            ?>
 
-                            <button id="downloadButton" onclick="sendRequest()" disabled>Download Report</button>
+                            <!-- <button id="downloadButton" onclick="sendRequest()" disabled>Download Report</button> -->
                         </div>
                     </div>
-                <?php } else {
-                } ?> -->
+                <?php 
+                // } 
+                // else {
+                // } 
+                ?>
             </nav>
         </header>
-    <?php } else { ?>
-        <header>
+    <?php
+    // } else { 
+    ?> 
+        <!-- <header>
         <nav>
             <div class="image-container">
                 <img class="pblogo" src="PunjabLogo.png" alt="logo">
             </div>
         </nav>
-    </header>
-    <?php } ?>
+    </header> -->
+     <?php 
+    // } 
+    ?> 
 
     <!-- <script>
         function toggleButton() {
