@@ -200,8 +200,8 @@ if (false !== strpos($_SERVER['REQUEST_URI'], 's1')) {
                             <a href="https://us-central1-teacherengagement-gliffic.cloudfunctions.net/report_generation_api_dist_phase1?state=Punjab&type=xlsx">Download State Report</a>
                             <a href="https://us-central1-teacherengagement-gliffic.cloudfunctions.net/report_generation_api_dist_phase1?state=Punjab&district=all&type=xlsx">Download District Report</a>
                         </div>
+                        <!-- <h2>JPG</h2>
                         <div class="buttons">
-                            <!-- <h2>JPG</h2>
                            
                                 <select class="select" name="district" id="district" onchange="toggleButton()">
                                     <option value="np">Select District</option>
@@ -228,6 +228,7 @@ if (false !== strpos($_SERVER['REQUEST_URI'], 's1')) {
                                     <option value="SANGRUR">Sangrur</option>
                                     <option value="SAS NAGAR">SAS Nagar</option>
                                     <option value="TARANTARAN">Tarantaran</option>
+                                </div>
                                 </select> -->
                             <?php 
                             // } else {
@@ -235,7 +236,6 @@ if (false !== strpos($_SERVER['REQUEST_URI'], 's1')) {
                             ?>
 
                             <!-- <button id="downloadButton" onclick="sendRequest()" disabled>Download Report</button> -->
-                        </div>
                     </div>
                 <?php 
                 // } 
@@ -258,25 +258,57 @@ if (false !== strpos($_SERVER['REQUEST_URI'], 's1')) {
     // } 
     ?> 
 
-    <!-- <script>
-        function toggleButton() {
-            var selectedDistrict = document.getElementById('district').value;
-            var downloadButton = document.getElementById('downloadButton');
+    <script>
+        document.querySelectorAll('a').forEach((button) => {
+            button.addEventListener('click', (event) => {
+                // Prevent the default action
+                //event.preventDefault();
+                const href = button.getAttribute('href');
+                if (!href || href === "#") {
+                    console.warn("No valid download link found.");
+                    return;
+                }
 
-            // Check if selectedDistrict is "np" and disable/enable the button accordingly
-            if (selectedDistrict === "np") {
-                downloadButton.disabled = true;
-            } else {
-                downloadButton.disabled = false;
-            }
-        }
+                // Disable all buttons
+                document.querySelectorAll('a').forEach((btn) => {
+                    btn.style.pointerEvents = 'none'; // Prevent clicks
+                    btn.style.opacity = '0.5';        // Dim appearance
+                });
 
-        function sendRequest() {
-        var selectedDistrict = document.getElementById('district').value;
-        var apiUrl = `https://us-central1-teacherengagement-gliffic.cloudfunctions.net/report_generation_api_dist_jpeg?state=${stateName}&type=image&district=` + selectedDistrict;
-        window.location.href = apiUrl;
-    }
-    </script> -->
+                // Update the clicked button's text
+                //button.innerText = 'Downloading...';
+
+                // Re-enable all buttons after a delay
+                setTimeout(() => {
+                    document.querySelectorAll('a').forEach((btn) => {
+                        btn.style.pointerEvents = 'auto'; // Re-enable clicks
+                        btn.style.opacity = '1';         // Restore appearance
+                    });
+                    // Reset the clicked button's text
+                    //button.innerText = 'Download ' + button.innerText.split(' ')[1];
+                }, 10000); // 10-second delay
+            });
+        });
+
+
+        // function toggleButton() {
+        //     var selectedDistrict = document.getElementById('district').value;
+        //     var downloadButton = document.getElementById('downloadButton');
+
+        //     // Check if selectedDistrict is "np" and disable/enable the button accordingly
+        //     if (selectedDistrict === "np") {
+        //         downloadButton.disabled = true;
+        //     } else {
+        //         downloadButton.disabled = false;
+        //     }
+        // }
+
+        // function sendRequest() {
+        // var selectedDistrict = document.getElementById('district').value;
+        // var apiUrl = `https://us-central1-teacherengagement-gliffic.cloudfunctions.net/report_generation_api_dist_jpeg?state=${stateName}&type=image&district=` + selectedDistrict;
+        // window.location.href = apiUrl;
+        //}
+    </script>
 
 </body>
 
