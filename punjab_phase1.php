@@ -338,14 +338,16 @@ if (strpos($string, $substring) !== false) {
     $encoded_string = str_replace('+', '%20', $encoded_string);
     // echo $encoded_string;
     // echo'<iframe width="100%" height="680" src="https://lookerstudio.google.com/embed/reporting/eae17fe5-462a-4053-a1d0-6b4a5ac91a6d/page/p_fs5i69p88c?params=%7B%22s1%22:%22'.$encoded_string.'%22,%22s2%22:%22'.$encoded_string.'%22%7D%22 frameborder="0" style="border:0" allowfullscreen></iframe>';
-    echo '<iframe width="100%" height="100%" src="https://lookerstudio.google.com/reporting/b70ee548-d2ec-4be8-aad8-c1e77f29a881/page/AlUZF" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>';
+    // echo '<iframe width="100%" height="100%" src="https://lookerstudio.google.com/reporting/b70ee548-d2ec-4be8-aad8-c1e77f29a881/page/AIUZF" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>';
+    echo '<iframe width="100%" height="100%" src="https://lookerstudio.google.com/embed/reporting/b70ee548-d2ec-4be8-aad8-c1e77f29a881/page/AlUZF" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>';
 } else {
     $decimal_number = hexdec($udise_code);
     // echo $decimal_number;
     $encoded_string = urlencode($decimal_number);
     $encoded_string = str_replace('+', '%20', $encoded_string);
     // echo '<iframe width="100%" height="100%" src="https://lookerstudio.google.com/embed/reporting/7b0c33d7-a1b0-4936-8317-1d1b36f55813/page/p_fs5i69p88c?params=%7B%22udc%22:%22'.$decimal_number.'%22%7D " frameborder="0" style="border:0" allowfullscreen></iframe>';
-    echo '<iframe width="100%" height="100%" src="https://lookerstudio.google.com/reporting/b70ee548-d2ec-4be8-aad8-c1e77f29a881/page/AlUZF" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>';
+    //echo '<iframe width="100%" height="100%" src="https://lookerstudio.google.com/reporting/b70ee548-d2ec-4be8-aad8-c1e77f29a881/page/AIUZF" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>';
+    echo '<iframe width="100%" height="100%" src="https://lookerstudio.google.com/embed/reporting/b70ee548-d2ec-4be8-aad8-c1e77f29a881/page/AlUZF" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>';
     exit;
 }
 
