@@ -24,6 +24,7 @@ if (isset($_GET['s1'])) {
     <style>
         :root {
             --cta-color: #F2C70D;
+            --cta-color-hover: #e2bb0e;
         }
 
         * {
@@ -35,11 +36,15 @@ if (isset($_GET['s1'])) {
         /* * {
             outline: 2px solid hotpink;
         } */
-
+            
         body {
             font-family: Montserrat, Arial, sans-serif;
             display: flex;
-            height: 100vh;
+            min-height: 100svh;
+        }
+
+        p{
+            margin: 0px;
         }
 
         .left {
@@ -60,7 +65,7 @@ if (isset($_GET['s1'])) {
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            height: 100%;
+            gap: 1rem;
         }
 
         .left .wrapper .logo-container {
@@ -105,33 +110,60 @@ if (isset($_GET['s1'])) {
         .left .wrapper .button-container{
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 0.5rem;
             justify-content: center;
             flex-wrap: wrap;
-            margin-block: 1rem;
+            max-width: 500px; 
         }
 
-        .left .wrapper .button-container .cta {
+        .left .wrapper .button-container .session-wrapper{
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+
+        .left .wrapper .button-container .session-wrapper .session-title{
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+        }
+
+        .left .wrapper .button-container .session-wrapper .links-container{
+            min-width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .left .wrapper .button-container .session-wrapper .links-container .cta {
+            flex: 1;
+            min-width: 200px;
             display: flex;
             align-items: center;
             justify-content: center;
             padding-block: 12px;
             padding-inline: 24px;
             background-color: var(--cta-color);
-            width: fit-content;
+            /* width: fit-content; */
             text-decoration: none;
             font-weight: 600;
             color: black;
             border-radius: 8px;
-            gap: 0.4rem;
+            gap: 1rem;
+        }
+        
+        .left .wrapper .button-container .session-wrapper .links-container .cta:hover {
+            background-color: var(--cta-color-hover);
         }
 
-        .left .wrapper .button-container .cta img {
+        .left .wrapper .button-container .session-wrapper .links-container .cta img {
             transform: rotate(0deg); 
             transition: transform 0.3s ease-in; 
         }
 
-        .left .wrapper .button-container .cta:hover img{
+        .left .wrapper .button-container .session-wrapper .links-container .cta:hover img{
             transform: rotate(45deg);
             transition: transform 0.3s ease-in;
         }
@@ -162,7 +194,6 @@ if (isset($_GET['s1'])) {
 
             body {
                 flex-direction: column; 
-               
             }
 
             .left .wrapper .logo-container, .left .wrapper .image-container,.left .wrapper .cta, .left .wrapper .udhyamlogo{
@@ -195,22 +226,41 @@ if (isset($_GET['s1'])) {
                 <img src="/assets/em.png" alt="punjab logo">
             </div>
             <div class="button-container">
-                <a class="cta" href="punjab_phase1(25-26).php" class="cta-button">
-                    Proceed To Phase 1 (2025 - 26) Dashboard
-                    <img src="/assets/arrow.svg" alt="">
-                </a>
-                <a class="cta" href="punjab_phase1(24-25).php" class="cta-button">
-                    Proceed To Phase 1 (2024 - 25) Dashboard
-                    <img src="/assets/arrow.svg" alt="">
-                </a>
-                <a class="cta" href="punjab_phase2(24-25).php" class="cta-button">
-                    Proceed To Phase 2 (2024 - 25) Dashboard
-                    <img src="/assets/arrow.svg" alt="">
-                </a>
-                <a class="cta" href="punjab_phase2(23-24).php?s1=<?php echo urlencode($s1Value); ?>" class="cta-button">
-                    Proceed To Phase 2 (2023 - 24) Dashboard
-                    <img src="/assets/arrow.svg" alt="">
-                </a>
+                <div class="session-wrapper">
+                    <p class="session-title">Session: 2025-26</p>
+                    <div class="links-container">
+                        <a class="cta" href="punjab_phase1(25-26).php" class="cta-button">
+                            Phase 1 
+                            <!-- <img src="/assets/arrow.svg" alt=""> -->
+                        </a>
+                        <a class="cta" href="punjab_phase2(25-26).php" class="cta-button">
+                            Phase 2 
+                            <!-- <img src="/assets/arrow.svg" alt=""> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="session-wrapper">
+                    <p class="session-title">Session: 2024-25</p>
+                    <div class="links-container">
+                        <a class="cta" href="punjab_phase1(24-25).php" class="cta-button">
+                            Phase 1
+                            <!-- <img src="/assets/arrow.svg" alt=""> -->
+                        </a>
+                        <a class="cta" href="punjab_phase2(24-25).php" class="cta-button">
+                            Phase 2
+                            <!-- <img src="/assets/arrow.svg" alt=""> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="session-wrapper">
+                    <p class="session-title">Session: 2023-24</p>
+                    <div class="links-container">
+                       <a class="cta" href="punjab_phase2(23-24).php?s1=<?php echo urlencode($s1Value); ?>" class="cta-button">
+                            Phase 2
+                            <!-- <img src="/assets/arrow.svg" alt=""> -->
+                        </a>
+                    </div>
+                </div>
             </div>
             <img class="udhyamlogo" src="/assets/udhyamlogo.png" alt="">
         </div>
