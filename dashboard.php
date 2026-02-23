@@ -214,27 +214,36 @@ if (isset($_GET['s1'])) {
     <div class="left">
         <div class="wrapper">
             <div class="logo-container">
-                <img src="/assets/govtlogo.png" alt="punjab logo">
-                <img src="/assets/pblogo.png" alt="punjab logo">
+                <!-- <img src="/assets/govtlogo.png" alt="punjab logo"> -->
+                <!-- <img src="/assets/pblogo.png" alt="punjab logo"> -->
+                <img src="/assets/2026/GovtOfPunjabLogo.png" alt="govt logo">
             </div>
             <div class="heading-container">
-                <h2 class="heading">PUNJAB YOUNG ENTREPRENEURS PROGRAMME STATE SCHEME</h2>
+                <h2 class="heading">PUNJAB - ENTREPRENEURSHIP EDUCATION CURRICULUM</h2>
                 <p class="subheading">Empowering the next generation of entrepreneurs</p>
             </div>
             <div class="image-container">
-                <img src="/assets/cm.png" alt="punjab logo">
-                <img src="/assets/em.png" alt="punjab logo">
+                <img src="/assets/cm.png" alt="cm logo">
+                <img src="/assets/em.png" alt="em logo">
             </div>
             <div class="button-container">
                 <div class="session-wrapper">
                     <p class="session-title">Session: 2025-26</p>
                     <div class="links-container">
                         <a class="cta" href="punjab_phase1(25-26).php" class="cta-button">
-                            Phase 1 
+                            Phase 1 Govt
                             <!-- <img src="/assets/arrow.svg" alt=""> -->
                         </a>
                         <a class="cta" href="punjab_phase2(25-26).php" class="cta-button">
-                            Phase 2 
+                            Phase 2 Govt
+                            <!-- <img src="/assets/arrow.svg" alt=""> -->
+                        </a>
+                        <a class="cta" href="punjab_phase1(25-26)_private.php" class="cta-button">
+                            Phase 1 PSEB
+                            <!-- <img src="/assets/arrow.svg" alt=""> -->
+                        </a>
+                        <a class="cta" href="punjab_phase2(25-26)_private.php" class="cta-button">
+                            Phase 2 PSEB
                             <!-- <img src="/assets/arrow.svg" alt=""> -->
                         </a>
                     </div>
@@ -262,7 +271,8 @@ if (isset($_GET['s1'])) {
                     </div>
                 </div>
             </div>
-            <img class="udhyamlogo" src="/assets/udhyamlogo.png" alt="">
+            <img class="udhyamlogo" src="/assets/2026/Udhyamwholelogo.png" alt="udhyam logo">
+            <!-- <img class="udhyamlogo" src="/assets/udhyamlogo.png" alt=""> -->
         </div>
     </div>
     <div class="right">
