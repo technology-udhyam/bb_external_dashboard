@@ -146,9 +146,11 @@ if (false !== strpos($_SERVER['REQUEST_URI'], 's1')) {
         }
 
         .image-container {
+            width: 100%;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
+            justify-content: space-between;
             gap: 1rem;
         }
 
