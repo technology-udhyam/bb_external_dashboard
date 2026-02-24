@@ -231,21 +231,20 @@ if (isset($_GET['s1'])) {
                     <p class="session-title">Session: 2025-26</p>
                     <div class="links-container">
                         <a class="cta" href="punjab_phase1(25-26).php" class="cta-button">
-                            Phase 1 Govt
+                            Phase 1
                             <!-- <img src="/assets/arrow.svg" alt=""> -->
                         </a>
                         <a class="cta" href="punjab_phase2(25-26).php" class="cta-button">
-                            Phase 2 Govt
+                            Phase 2
                             <!-- <img src="/assets/arrow.svg" alt=""> -->
                         </a>
                         <a class="cta" href="punjab_phase1(25-26)_private.php" class="cta-button">
                             Phase 1 PSEB
                             <!-- <img src="/assets/arrow.svg" alt=""> -->
                         </a>
-                        <a class="cta" href="punjab_phase2(25-26)_private.php" class="cta-button">
+                        <!-- <a class="cta" href="punjab_phase2(25-26)_private.php" class="cta-button">
                             Phase 2 PSEB
-                            <!-- <img src="/assets/arrow.svg" alt=""> -->
-                        </a>
+                        </a> -->
                     </div>
                 </div>
                 <div class="session-wrapper">
@@ -255,10 +254,9 @@ if (isset($_GET['s1'])) {
                             Phase 1
                             <!-- <img src="/assets/arrow.svg" alt=""> -->
                         </a>
-                        <a class="cta" href="punjab_phase2(24-25).php" class="cta-button">
+                        <!-- <a class="cta" href="punjab_phase2(24-25).php" class="cta-button">
                             Phase 2
-                            <!-- <img src="/assets/arrow.svg" alt=""> -->
-                        </a>
+                        </a> -->
                     </div>
                 </div>
                 <div class="session-wrapper">
